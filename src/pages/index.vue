@@ -1,7 +1,7 @@
 <template>
-  <v-row align="center" justify="center">
-    <v-col cols="12" lg="4" xl="3" v-for="(link, index) in stuff" :key="link">
-      <PolaroidFrame :color="colors[index%3]" :text="link" :image="index + 1" />
+  <v-row align="center">
+    <v-col cols="4" md="3" lg="3" xl="3" v-for="(link, index) in stuff" :key="link">
+      <PolaroidFrame :color="colors[index%3]" :food="food[index%3]" :text="link" :image="index + 1" />
     </v-col>
   </v-row>
 
@@ -13,7 +13,7 @@
             <v-img class="sticker-border" src="/banner.png"/>
         </v-col>
         <v-col cols="2">
-            <v-img class="sticker-border" src="/yellow-star.png"/>
+            <v-img class="sticker-border flip-hor" src="/red-stars.png"/>
         </v-col>
 
     </v-row>
@@ -121,12 +121,24 @@
     'yellow',
     'red'
   ])
+  const food = ref([
+    'burger',
+    'rice',
+    'butter-chicken'
+  ])
   const stuff = ref([
     'The Story',
     'The Gang',
     'The Menu',
     'The Galleries',
-    'The Happenings',
+    'Happenings',
     'Get With Us'
   ])
 </script>
+
+<style>
+.flip-hor {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+</style>

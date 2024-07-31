@@ -1,20 +1,19 @@
 <template>
-        <v-img 
+        <!-- <v-img 
             :src="`/pushpin-${color}.png`"
             width="50"
             height="50"
             class="overlay-image"
-        ></v-img>
+        ></v-img> -->
         <v-sheet
-        class="mt-5 px-5 pt-5 pb-15 text-center"
-        rounded="rounded"
+        class="mt-5 px-5 pt-5 pb-5 text-center"
         elevation="8"
+        height="100%"
         >
         <v-img 
-            height="340"
-            aspect-ratio="1/1"
+            aspect-ratio="1"
             cover
-            :src="`https://foodish-api.com/images/biryani/biryani${image}.jpg`">
+            :src="`https://foodish-api.com/images/${food}/${food}${image}.jpg`">
         </v-img>
         <p class="mt-3 text-body-1 font-weight-bold ">{{ text }}</p>
         </v-sheet>
@@ -33,16 +32,20 @@ defineProps({
     image: {
         type: Number,
         default: 1,
+    },
+    food: {
+        type: Number,
+        default: 1,
     }
 })
 </script>
 
 <style lang="scss" scoped>
-.overlay-image {
-  position: relative;
-  top: -490px;
-  left: 25px;
-  /* Optional: Center the overlay image */
-  transform: translate(320%, -40%) scaleX(-1);
-}
+// .overlay-image {
+//   position: relative;
+//   top: -10px;
+//   left: 25px;
+//   /* Optional: Center the overlay image */
+//   transform: translate(320%, -40%) scaleX(-1);
+// }
 </style>

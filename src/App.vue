@@ -3,7 +3,7 @@
     <v-main class="background-image">
       <v-container>
         <ParksideHeader/>
-        <router-view />
+        <router-view/>
         <AppFooter/>
       </v-container>
       </v-main>
