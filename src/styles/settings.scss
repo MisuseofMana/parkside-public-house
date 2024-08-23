@@ -8,3 +8,105 @@
 // @use 'vuetify/settings' with (
 //   $color-pack: false
 // );
+@font-face {
+    font-family: 'Handwriting';
+    src: url('@/assets/fonts/handwriting.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.v-application {
+    font-family: "Handwriting", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.text-body-1 {
+    font-family: "Handwriting", serif !important;
+    font-optical-sizing: auto !important;
+    font-size: 2rem !important;
+    line-height: 2.8rem !important;
+    font-style: light !important;    
+}
+
+.text-body-2 {
+    font-family: "Handwriting", serif !important;
+    font-optical-sizing: auto !important;
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+    font-style: light !important;    
+}
+
+.text-h1 {
+    font-family: "Handwriting", serif !important;
+    font-optical-sizing: auto !important;
+    font-size: 5rem !important;
+    line-height: 5.5rem !important;
+    font-style: normal !important;
+}
+
+.text-h2 {
+    font-family: "Handwriting", serif !important;
+    font-optical-sizing: auto !important;
+    font-size: 3rem !important;
+    line-height: 3.5rem !important;
+    font-style: normal !important;
+}
+
+.text-h3 {
+    font-family: "Handwriting", serif !important;
+    font-optical-sizing: auto !important;
+    font-size: 2rem !important;
+    line-height: 2.5rem !important;
+    font-style: normal !important;
+}
+
+.text-h4 {
+    font-family: "Handwriting", serif !important;
+    font-optical-sizing: auto !important;
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+    font-style: normal !important;
+}
+
+.text-h5 {
+    font-family: "Handwriting", serif !important;
+    font-optical-sizing: auto !important;
+    font-size: 2rem !important;
+    line-height: 2rem !important;
+    font-style: bold !important;
+}
+
+a {
+    color: #1075bc;
+    text-decoration: none;
+}
+
+// https://vuetifyjs.com/en/features/display-and-platform/#breakpoints-and-thresholds
+// tablets and lower
+@media (max-width: 959px) {
+    .text-body-1 {
+        font-size: 1.5rem !important;
+        line-height: 2rem !important;
+    }
+    
+    .text-body-2 {
+        font-size: 1.2rem !important;
+        line-height: 1.7rem !important;
+    }
+    
+    .text-h1 {
+        font-size: 3rem !important;
+        line-height: 3.5rem !important;
+    }
+    
+    .text-h2 {
+        font-size: 2.2rem !important;
+        line-height: 2.7rem !important;
+    }
+    
+    .text-h3 {
+        font-size: 2rem !important;
+        line-height: 2.5rem !important;
+    }
+}

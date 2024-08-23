@@ -1,26 +1,29 @@
 <template>
-        <!-- <v-img 
-            :src="`/pushpin-${color}.png`"
-            width="50"
-            height="50"
-            class="overlay-image"
-        ></v-img> -->
         <v-sheet
-        class="mt-5 px-5 pt-5 pb-5 text-center"
+        class="px-5 pt-5 pb-5 text-center position-relative"
         elevation="8"
         height="100%"
+        rounded="rounded"
         >
         <v-img 
             aspect-ratio="1"
             cover
-            :src="`https://foodish-api.com/images/${food}/${food}${image}.jpg`">
+            :src="getImgUrl(photoName)">
         </v-img>
-        <p class="mt-3 text-body-1 font-weight-bold ">{{ text }}</p>
+        <v-img 
+            :src="getPinUrl(`pushpin-${props.color}.png`)"
+            class="position-absolute top-0 left-0 mt-n5"
+            width="96%"
+            height="35"
+        ></v-img>
+        <p class="mt-3 text-body-2">{{ text }}</p>
         </v-sheet>
 </template>
 
 <script setup>
-defineProps({
+import { computed } from 'vue'
+
+const props = defineProps({
     color: {
         type: String,
         default: 'red'
@@ -33,19 +36,13 @@ defineProps({
         type: Number,
         default: 1,
     },
-    food: {
-        type: Number,
-        default: 1,
+    photoName: {
+        type: String,
+        default: '',
     }
 })
-</script>
 
-<style lang="scss" scoped>
-// .overlay-image {
-//   position: relative;
-//   top: -10px;
-//   left: 25px;
-//   /* Optional: Center the overlay image */
-//   transform: translate(320%, -40%) scaleX(-1);
-// }
-</style>
+const getImgUrl = (imageNameWithExtension)=> new URL(`/public/pics/${imageNameWithExtension}`, import.meta.url).href;
+const getPinUrl = (imageNameWithExtension)=> new URL(`/public/${imageNameWithExtension}`, import.meta.url).href;
+
+</script>

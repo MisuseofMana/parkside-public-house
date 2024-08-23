@@ -1,17 +1,11 @@
 <template>
-  <v-footer height="70" app class="d-flex justify-space-around">
-    <p>Get With Us</p>
-    <p>
-      Facebook
-    </p>
-    <p>
-      Instagram
-    </p>
-    <p>
-      Phone Number
-    </p>
-    <p>
-      Contact Form
-    </p>
+  <v-footer height="70" app class="d-flex justify-space-around text-body-1">
+    <!-- <p>Get With Us</p> -->
+    <a href="https://www.facebook.com/profile.php?id=61552905580298" target="_blank">
+      <v-icon>mdi-facebook</v-icon>Facebook
+    </a>
+    <a href="https://www.instagram.com/parksidepublichouse/" target="_blank">
+      <v-icon>mdi-instagram</v-icon> Instagram
+    </a>
   </v-footer>
 </template>
