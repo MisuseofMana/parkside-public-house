@@ -18,7 +18,7 @@
             <v-img class="sticker-border" src="/banner.png"/>
         </v-col>
     </v-row>
-    <v-row>
+    <v-row class="mb-3">
         <v-col cols="12" sm="6" md="6" lg="4" class="text-center">
             <v-sheet elevation="8" class="pa-5" rounded="rounded">
                 <p class="text-body-1 mb-2">2608 Shelby St, Indianapolis, IN 46203</p>
@@ -41,24 +41,6 @@
                     </tr>
                     </tbody>
                 </v-table>
-            </v-sheet>
-        </v-col>
-        <v-col cols="12" sm="6" lg="4">
-            <PolaroidFrame color="yellow" photo-name="outside.jpg" text="Parkside Public House, Garfield Park's newest place to hang out with a drink and good food."/>
-        </v-col>
-        <v-col cols="12" sm="6" lg="4">
-            <PolaroidFrame color="blue" photo-name="sign.jpg" text="Food, Drinks, Friends. Parkside is all about community, baby."/>
-        </v-col>
-        <v-col cols="12" sm="6" lg="4" class="text-center">
-            <PolaroidFrame color="red" photo-name="skewers.jpg" text="Menu Coming Soon"/>
-        </v-col>
-        <v-col cols="12" sm="6" lg="4">
-            <v-sheet elevation="8" class="pa-5" rounded="rounded">
-                <v-img
-                src="/pics/gang.jpg"
-                class="mb-4"
-                />
-                <p class="text-body-2">The folks makin' it happen. Pictured center in the apron is Parkside's Manager Josh, a Garfield Park resident and friendly neighborhood gem. </p>
             </v-sheet>
         </v-col>
     </v-row>
@@ -101,14 +83,16 @@ const hours = ref([
 
 <style lang="scss" scoped>
 .sticker-border {
- -webkit-filter: drop-shadow(6px 6px 0 white)
-         drop-shadow(-6px 6px 0 white)
-         drop-shadow(6px -6px 0 white)
-         drop-shadow(-6px -6px 0 white);
+ -webkit-filter: drop-shadow(3px 3px 0 white)
+         drop-shadow(-3px 3px 0 white)
+         drop-shadow(3px -3px 0 white)
+         drop-shadow(-3px -3px 0 white)
+         drop-shadow(4px 4px 4px dimgrey);
 
- filter: drop-shadow(6px 6px 0 white)
-         drop-shadow(-6px 6px 0 white)
-        drop-shadow(6px -6px 0 white)
-        drop-shadow(-6px -6px 0 white);
+ filter: drop-shadow(3px 3px 0 white)
+         drop-shadow(-3px 3px 0 white)
+        drop-shadow(3px -3px 0 white)
+        drop-shadow(-3px -3px 0 white)
+        drop-shadow(4px 4px 4px dimgrey);
 }
 </style>

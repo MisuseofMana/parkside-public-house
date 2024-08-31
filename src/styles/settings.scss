@@ -19,6 +19,7 @@
     font-family: "Handwriting", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    text-transform: uppercase !important;
 }
 
 .text-body-1 {
@@ -26,7 +27,8 @@
     font-optical-sizing: auto !important;
     font-size: 2rem !important;
     line-height: 2.8rem !important;
-    font-style: light !important;    
+    font-style: light !important;  
+    text-transform: uppercase !important;  
 }
 
 .text-body-2 {
@@ -34,7 +36,31 @@
     font-optical-sizing: auto !important;
     font-size: 1.5rem !important;
     line-height: 2rem !important;
-    font-style: light !important;    
+    font-style: light !important;   
+    text-transform: uppercase !important; 
+}
+
+.v-input__control input {
+    font-size: 3rem; /* Adjust the font size as needed */
+    padding-top: 40px;
+}
+
+.v-btn__content {
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    padding-top: 10px;
+}
+
+.v-input__control textarea {
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    padding-top: 40px !important;
+}
+
+.v-input__control .v-label {
+    font-size: 2.5rem; /* Adjust the font size as needed */
+}
+
+.v-input__control .v-field-label--floating {
+    font-size: 2rem; /* Adjust the font size as needed */
 }
 
 .text-h1 {
@@ -43,6 +69,7 @@
     font-size: 5rem !important;
     line-height: 5.5rem !important;
     font-style: normal !important;
+    text-transform: uppercase !important;
 }
 
 .text-h2 {
@@ -51,6 +78,7 @@
     font-size: 3rem !important;
     line-height: 3.5rem !important;
     font-style: normal !important;
+    text-transform: uppercase !important;
 }
 
 .text-h3 {
@@ -59,6 +87,7 @@
     font-size: 2rem !important;
     line-height: 2.5rem !important;
     font-style: normal !important;
+    text-transform: uppercase !important;
 }
 
 .text-h4 {
@@ -67,6 +96,7 @@
     font-size: 1.5rem !important;
     line-height: 2rem !important;
     font-style: normal !important;
+    text-transform: uppercase !important;
 }
 
 .text-h5 {
@@ -75,11 +105,13 @@
     font-size: 2rem !important;
     line-height: 2rem !important;
     font-style: bold !important;
+    text-transform: uppercase !important;
 }
 
 a {
     color: #1075bc;
     text-decoration: none;
+    text-transform: uppercase !important;
 }
 
 // https://vuetifyjs.com/en/features/display-and-platform/#breakpoints-and-thresholds
