@@ -21,7 +21,9 @@
     <v-row class="mb-3">
         <v-col cols="12" sm="6" md="6" lg="4" class="text-center">
             <v-sheet elevation="8" class="pa-5" rounded="rounded">
-                <p class="text-body-1 mb-2">2608 Shelby St, Indianapolis, IN 46203</p>
+                <a class="text-body-1 text-decoration-underline mb-4" href="https://www.google.com/maps/dir/39.5280384,-86.2093312/2608+Shelby+St,+Indianapolis,+IN+46203/@39.627388,-86.3574797,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x886b5a5dd461660b:0x615aaaa88abc42b5!2m2!1d-86.1398313!2d39.729772?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                    2608 Shelby St, Indianapolis, IN 46203
+                </a>
                 <iframe class="mb-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13124.8222887693!2d-86.14883949839464!3d39.72718534991118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886b5bbbaad71cb1%3A0x3dc75f2b6dc9f000!2sParkside%20Public%20House!5e0!3m2!1sen!2sus!4v1724381194904!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <!-- <p class="text-body-1"><v-icon class="mr-2">mdi-phone</v-icon> (317)000-0000</p> -->
             </v-sheet>
@@ -80,19 +82,3 @@ const hours = ref([
 
 ])
 </script>
-
-<style lang="scss" scoped>
-.sticker-border {
- -webkit-filter: drop-shadow(3px 3px 0 white)
-         drop-shadow(-3px 3px 0 white)
-         drop-shadow(3px -3px 0 white)
-         drop-shadow(-3px -3px 0 white)
-         drop-shadow(4px 4px 4px dimgrey);
-
- filter: drop-shadow(3px 3px 0 white)
-         drop-shadow(-3px 3px 0 white)
-        drop-shadow(3px -3px 0 white)
-        drop-shadow(-3px -3px 0 white)
-        drop-shadow(4px 4px 4px dimgrey);
-}
-</style>

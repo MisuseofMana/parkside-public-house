@@ -8,6 +8,21 @@
 // @use 'vuetify/settings' with (
 //   $color-pack: false
 // );
+
+.sticker-border {
+    -webkit-filter: drop-shadow(3px 3px 0 white)
+            drop-shadow(-3px 3px 0 white)
+            drop-shadow(3px -3px 0 white)
+            drop-shadow(-3px -3px 0 white)
+            drop-shadow(4px 4px 4px dimgrey);
+
+    filter: drop-shadow(3px 3px 0 white)
+            drop-shadow(-3px 3px 0 white)
+            drop-shadow(3px -3px 0 white)
+            drop-shadow(-3px -3px 0 white)
+            drop-shadow(4px 4px 4px dimgrey);
+    }
+
 @font-face {
     font-family: 'Handwriting';
     src: url('@/assets/fonts/handwriting.ttf');

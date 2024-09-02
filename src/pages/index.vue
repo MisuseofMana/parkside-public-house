@@ -114,13 +114,13 @@
 
   <v-row>
     <v-col cols="4">
-      <v-img src="/yellow-star.png"></v-img>
+      <v-img class="sticker-border" src="/yellow-stars.png"></v-img>
     </v-col>
     <v-col cols="4">
-      <v-img src="/yum-cloud.png"></v-img>
+      <v-img class="sticker-border" src="/yum-cloud.png"></v-img>
     </v-col>
     <v-col cols="4">
-      <v-img src="/red-stars.png"></v-img>
+      <v-img class="sticker-border" src="/red-stars.png"></v-img>
     </v-col>
   </v-row>
 
