@@ -17,24 +17,24 @@
   </head>
   <v-row>
     <v-col cols="12" sm="6" class="pb-15 mb-10">
-      <PolaroidFrame color="red" photo-name="bites.jpg" text="Brunch from 10am - 3pm"/>
+      <PolaroidFrame color="red" photo-name="bites" text="Brunch from 10am - 3pm"/>
       <v-btn href="/menu/brunch.pdf" target="_blank" color="#2a95a3" size="x-large" width="100%" class="mt-4">Get the Brunch Menu</v-btn>
     </v-col>
     <v-col cols="12" sm="6" class="pb-15 mb-10">
-      <PolaroidFrame color="blue" photo-name="skewers.jpg" text="Snacks from 4PM to 5PM : Dinner 5PM - 10PM"/>
+      <PolaroidFrame color="blue" photo-name="skewers" text="Snacks from 4PM to 5PM : Dinner 5PM - 10PM"/>
       <v-btn href="/menu/dinner.pdf" target="_blank" color="#fdbe15" size="x-large" width="100%" class="mt-4">Get the Dinner Menu</v-btn>
     </v-col>
     <v-col cols="12" sm="6" md="6" lg="4">
-        <PolaroidFrame color="yellow" photo-name="outside.jpg" text="Garfield Park's newest place to hang out with a drink and good food."/>
+        <PolaroidFrame color="yellow" photo-name="outside" text="Garfield Park's newest place to hang out with a drink and good food."/>
     </v-col>
     <v-col cols="12" sm="6" md="6" lg="4">
-        <PolaroidFrame color="red" photo-name="gallery.jpg" text="Local art to admire while you dine in."/>
+        <PolaroidFrame color="red" photo-name="gallery" text="Local art to admire while you dine in."/>
     </v-col>
     <v-col cols="12" sm="6" md="6" lg="4">
-        <PolaroidFrame color="blue" photo-name="sign.jpg" text="Food, Drinks, Friends. Parkside is all about community, baby."/>
+        <PolaroidFrame color="blue" photo-name="sign" text="Food, Drinks, Friends. Parkside is all about community, baby."/>
     </v-col>
     <v-col cols="12" sm="12" md="6" lg="8">
-        <PolaroidFrame color="yellow" aspect-ratio="1.9" photo-name="gang.jpg" text="The folks makin' it happen."/>
+        <PolaroidFrame color="yellow" aspect-ratio="1.9" photo-name="gang" text="The folks makin' it happen."/>
     </v-col>
     <v-col cols="12">
       <v-sheet elevation="8" class="pa-10 py-5" rounded="rounded">

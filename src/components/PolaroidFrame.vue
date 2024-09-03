@@ -8,7 +8,20 @@
         <v-img 
             :aspect-ratio="aspectRatio"
             cover
-            :src="getImgUrl(photoName)">
+            :lazy-src="getImgUrl(photoName+'-lazy.jpg')"
+            :src="getImgUrl(photoName+'.jpg')">
+            <template v-slot:placeholder>
+            <v-row
+                align="center"
+                class="fill-height ma-0"
+                justify="center"
+            >
+                <v-progress-circular
+                color="grey-lighten-5"
+                indeterminate
+                ></v-progress-circular>
+            </v-row>
+        </template>
         </v-img>
         <v-img 
             :src="getPinUrl(`pushpin-${props.color}.png`)"
