@@ -1,20 +1,4 @@
 <template>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parkside Public House | Food, Drinks, Friends</title>
-    <meta name="description" content="Garfield Park resturaunt located south of Indianapolis, Indiana. Serving food, drinks, and showcasing local art. Focuses on high quality food and atmosphere, cultivating a unique meeting place for locals and visitors alike.">
-    <meta property="og:title" content="Parkside Public House | Food, Drinks, Friends">
-    <meta property="og:description" content="Garfield Park resturaunt located south of Indianapolis, Indiana. Serving food, drinks, and showcasing local art. Focuses on high quality food and atmosphere, cultivating a unique meeting place for locals and visitors alike.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/MisuseofMana/parkside-public-house/main/outside.jpg">
-    <meta property="og:url" content="https://www.parksidepublichouse.com">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Parkside Public House">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Parkside Public House">
-    <meta name="twitter:description" content="Garfield Park resturaunt located south of Indianapolis, Indiana. Serving food, drinks, and showcasing local art. Focuses on high quality food and atmosphere, cultivating a unique meeting place for locals and visitors alike.">
-    <meta name="twitter:image" content="https://www.parksidepublichouse.com">
-  </head>
   <v-row>
     <v-col cols="12" sm="6" class="pb-15 mb-10">
       <PolaroidFrame color="red" photo-name="bites" text="Brunch from 10am - 3pm"/>
