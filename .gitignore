@@ -13,7 +13,7 @@ yarn-error.log*
 pnpm-debug.log*
 
 # dist
-.dist
+dist
 
 # Editor directories and files
 .idea
